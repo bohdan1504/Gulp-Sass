@@ -1,0 +1,35 @@
+@import "smart-grid.sass"
+$bg-el: #3d382b
+@include reset()
+
+.cont
+	padding: 0
+	width: 100%
+	background-color: #232324;
+.wrapper
+	@include row-flex()
+	@include justify-content(center)
+	& :first-child
+		order: 1
+	& :last-child
+		order: -1
+	.item
+		@include col()
+		@include col-4()
+		@include col-md-6()
+		@include col-xs-11()
+		margin-top: 20px
+		background-color: $bg-el
+		color: #fff
+		text-align: center
+		border-radius: 7px
+		img
+			max-width: 100%
+			height: 200px
+		.title
+			font-size: 2em
+			span
+				color: crimson
+		p
+			font-size: 1.2em
+			color: #9e9782
